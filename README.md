@@ -1,5 +1,3 @@
-# web3mq cairo合约说明
-
 # **Web3MQ-cairo**
 
 ## **Introduction**
