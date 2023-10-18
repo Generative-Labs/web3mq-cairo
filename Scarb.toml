@@ -1,0 +1,21 @@
+[package]
+name = "web3mq_cairo"
+version = "0.1.0"
+
+[[target.starknet-contract]]
+sierra = true
+casm = true
+
+[dependencies]
+starknet = "2.2.0"
+snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry.git", tag = "v0.6.0" }
+openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", rev="fcdd6d1b02306f18f1089656f15b87d1701ffde3" }
+# alexandria_math = { git = "https://github.com/keep-starknet-strange/alexandria.git" }
+# alexandria_data_structures = { git = "https://github.com/keep-starknet-strange/alexandria.git" }
+
+[tool.snforge]
+exit_first = true
+
+[tool.sncast.user_]
+account = "user_"
+url = "https://starknet-goerli.g.alchemy.com/v2/xH1ISEJgS906iZsj-7x6kyUjziXr6hTY"
